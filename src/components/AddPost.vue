@@ -1,10 +1,11 @@
 <template>
   <form class="add-post">
-    Add Post:
-    <input v-model="title"/>
-    <input v-model="author"/>
-    <input v-model="body"/>
-    <button type="button" @click="onAdd({title, author, body})"/>
+    <div class="inputs">
+      <input v-model="title" placeholder="enter title"/>
+      <input v-model="author" placeholder="enter author"/>
+      <input v-model="body" placeholder="enter your post!"/>
+      <button type="button" @click="onAdd({title, author, body})">add post</button>
+    </div>
   </form>
 </template>
 
@@ -13,9 +14,9 @@ export default {
   name: 'AddPost',
   data () {
     return {
-      title: 'hello',
-      author: 'enter',
-      body: 'body'
+      title: '',
+      author: '',
+      body: ''
     }
   },
   props: [ 'onAdd' ]
