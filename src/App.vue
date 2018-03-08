@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <MostRecentPosts/>
     <div><h2>second section</h2></div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import MostRecentPosts from './components/MostRecentPosts'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MostRecentPosts
   }
 }
 </script>
